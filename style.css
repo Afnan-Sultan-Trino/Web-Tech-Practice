@@ -1,0 +1,130 @@
+
+/*universal Selector*/
+*{
+    margin: 0%;
+    padding: 1%;
+
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+body{
+    background-color: #191919;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: auto;
+    
+}
+h1{
+    color: rgb(51, 207, 12);
+    border: 2px;
+    border-left-style: double;
+    border-left-color: #0eea20;
+    border-top-style:dotted;
+    border-top-color: #088fc5;
+    border-bottom-style: double;
+    border-bottom-color: #faaf02;
+}
+p{
+    border: 5px solid rgb(227, 230, 232);
+    border-radius: 10px;
+}
+#div{
+    color: #191919;
+    width: 1500px;       
+    height: 500px;       
+    border: 5px solid;
+    background-image: url("Screenshot\ 2026-05-21\ 231552.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+h2{
+    background: linear-gradient(to right, rgb(0, 109, 225), orange);
+}
+/*for ID, we use '#' here*/
+
+#div1{
+    background-color: #00790a;
+    margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+    height:200px;
+    width: 200px;
+
+}
+#div2{
+background-color: #4f0353;
+color: #faaf02;
+height:150px;
+width: 400px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-top: 1px;
+margin-left: 300px;
+
+}
+
+#div3{
+background-color: #041053;
+margin: 100px 10px 20px 20px;     /*top right bottom left or TRBL*/
+height:150px;
+width: 400px;
+display: flex;
+justify-content: center;  /* horizontal centering  x-axis or left to right*/
+align-items: center;      /* vertical centering y-axis or top to bottom*/
+}
+
+/*for class, we use '.' here*/
+
+.divAll{
+    color: #0af473;
+    padding: 100px;
+}
+
+.parentdiv{
+    display:flex;
+    background-color:rgb(207, 7, 7);
+    gap: 100px;
+}
+
+#div5{
+    background-color: #0c4506;
+    height: 150px;
+    width: 350px;
+    margin-top: 20px;
+
+    /* To make anything at center, at first we look for parent or outside div, and then these property */
+
+    display: flex;
+    justify-content: center;  /* horizontal centering  x-axis or left to right*/
+    align-items: center;      /* vertical centering y-axis or top to bottom*/
+}
+#div6{
+    background-color: #dd0606;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    
+}
+
+ul:nth-child(2n){
+  color:#07ffda
+}
+
+button{
+    transition: 2sec;
+    padding: 10px 20px;
+}
+
+button:hover{
+    background-color: #ff8d03;
+    color:#f6f3ed;
+    transform: scale(1.2); 
+}
